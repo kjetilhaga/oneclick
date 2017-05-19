@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://anderius.github.io/automatic-giggle/ -->
+<html lang="en" ng-app="one-click-shopping" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    <title>Testing One-Click-Shopping</title>
+    <script src="./Testing One-Click-Shopping_files/angular.js"></script>
+    <script src="./Testing One-Click-Shopping_files/controllers.js"></script>
+    <script src="./Testing One-Click-Shopping_files/app.js"></script>
+
+    <link rel="stylesheet" href="./Testing One-Click-Shopping_files/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body ng-controller="OneClickShoppingCtrl" class="ng-scope">
+
+<div class="container">
+
+    <h1>One Click Shopping</h1>
+
+    <div class="col-md-5">
+        <h2>Connectivity
+            <a ng-click="testConnectivity()" class="btn btn-info" href="http://anderius.github.io/automatic-giggle/#" role="button">
+                <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+            </a></h2>
+        <!-- ngRepeat: result in test_result | orderBy: ['env.name', 'component'] --><div class="panel ng-scope panel-success" ng-repeat="result in test_result | orderBy: [&#39;env.name&#39;, &#39;component&#39;]" ng-class="{&#39;panel-success&#39;: result.passed, &#39;panel-danger&#39;: !result.passed}" ng-init="expanded=!result.passed">
+
+            <div ng-click="expanded=!expanded" class="panel-heading ng-binding">Using msg-api-pt.telia.no - Mobile session handler</div>
+            <div class="panel-body ng-hide" ng-show="expanded">
+                <p class="ng-binding">On Telia radio network. Token: NUXbjIm78fAPTGPeS1ub</p>
+                <pre class="ng-binding">http://msg-api-pt.telia.no/mobile-session-handler/session</pre>
+            </div>
+        </div><!-- end ngRepeat: result in test_result | orderBy: ['env.name', 'component'] --><div class="panel ng-scope panel-success" ng-repeat="result in test_result | orderBy: [&#39;env.name&#39;, &#39;component&#39;]" ng-class="{&#39;panel-success&#39;: result.passed, &#39;panel-danger&#39;: !result.passed}" ng-init="expanded=!result.passed">
+
+            <div ng-click="expanded=!expanded" class="panel-heading ng-binding">Using msg-api-pt.telia.no - User SMS Service</div>
+            <div class="panel-body ng-hide" ng-show="expanded">
+                <p class="ng-binding">Connection OK (no SMS was sent in this test).</p>
+                <pre class="ng-binding">https://msg-api-pt.telia.no/user-sms-service/</pre>
+            </div>
+        </div><!-- end ngRepeat: result in test_result | orderBy: ['env.name', 'component'] --><div class="panel ng-scope panel-danger" ng-repeat="result in test_result | orderBy: [&#39;env.name&#39;, &#39;component&#39;]" ng-class="{&#39;panel-success&#39;: result.passed, &#39;panel-danger&#39;: !result.passed}" ng-init="expanded=!result.passed">
+
+            <div ng-click="expanded=!expanded" class="panel-heading ng-binding">Using msg-api.telia.no - Mobile session handler</div>
+            <div class="panel-body" ng-show="expanded">
+                <p class="ng-binding">Got HTTP status code: -1</p>
+                <pre class="ng-binding">http://msg-api.telia.no/mobile-session-handler/session</pre>
+            </div>
+        </div><!-- end ngRepeat: result in test_result | orderBy: ['env.name', 'component'] --><div class="panel ng-scope panel-danger" ng-repeat="result in test_result | orderBy: [&#39;env.name&#39;, &#39;component&#39;]" ng-class="{&#39;panel-success&#39;: result.passed, &#39;panel-danger&#39;: !result.passed}" ng-init="expanded=!result.passed">
+
+            <div ng-click="expanded=!expanded" class="panel-heading ng-binding">Using msg-api.telia.no - User SMS Service</div>
+            <div class="panel-body" ng-show="expanded">
+                <p class="ng-binding">Got HTTP status code: -1</p>
+                <pre class="ng-binding">https://msg-api.telia.no/user-sms-service/</pre>
+            </div>
+        </div><!-- end ngRepeat: result in test_result | orderBy: ['env.name', 'component'] --><div class="panel ng-scope panel-success" ng-repeat="result in test_result | orderBy: [&#39;env.name&#39;, &#39;component&#39;]" ng-class="{&#39;panel-success&#39;: result.passed, &#39;panel-danger&#39;: !result.passed}" ng-init="expanded=!result.passed">
+
+            <div ng-click="expanded=!expanded" class="panel-heading ng-binding">Using new-waptest.netcom.no - Mobile session handler</div>
+            <div class="panel-body ng-hide" ng-show="expanded">
+                <p class="ng-binding">On Telia radio network. Token: qFkjuNPWCgkaXYiX0DmQ</p>
+                <pre class="ng-binding">http://new-waptest.netcom.no/mobile-session-handler/session</pre>
+            </div>
+        </div><!-- end ngRepeat: result in test_result | orderBy: ['env.name', 'component'] --><div class="panel ng-scope panel-success" ng-repeat="result in test_result | orderBy: [&#39;env.name&#39;, &#39;component&#39;]" ng-class="{&#39;panel-success&#39;: result.passed, &#39;panel-danger&#39;: !result.passed}" ng-init="expanded=!result.passed">
+
+            <div ng-click="expanded=!expanded" class="panel-heading ng-binding">Using new-waptest.netcom.no - User SMS Service</div>
+            <div class="panel-body ng-hide" ng-show="expanded">
+                <p class="ng-binding">Connection OK (no SMS was sent in this test).</p>
+                <pre class="ng-binding">https://new-waptest.netcom.no/user-sms-service/</pre>
+            </div>
+        </div><!-- end ngRepeat: result in test_result | orderBy: ['env.name', 'component'] -->
+    </div>
+    <div class="col-md-5">
+        <h2 class="ng-binding">Env: </h2>
+        <form class="form ng-pristine ng-valid">
+            <div class="form-group">
+                <label for="env">Environment</label>
+                <div class="input-group">
+                    <select id="env" ng-model="selected_env" class="form-control ng-pristine ng-untouched ng-valid ng-not-empty"><option value="? string:it1direct ?"></option>
+                        <!-- ngRepeat: (key, env) in envs --><option ng-repeat="(key, env) in envs" value="pt" class="ng-binding ng-scope">Using msg-api-pt.telia.no</option><!-- end ngRepeat: (key, env) in envs --><option ng-repeat="(key, env) in envs" value="prod" class="ng-binding ng-scope">Using msg-api.telia.no</option><!-- end ngRepeat: (key, env) in envs --><option ng-repeat="(key, env) in envs" value="wap" class="ng-binding ng-scope">Using new-waptest.netcom.no</option><!-- end ngRepeat: (key, env) in envs -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="xAlias">X-Alias</label>
+                    <div class="input-group">
+                        <input type="text" size="20" id="xAlias" ng-model="xAlias" class="form-control ng-pristine ng-untouched ng-valid ng-empty">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="xForwardedForHeader">X-Forwarded-For</label>
+                    <div class="input-group">
+                        <input type="text" size="20" id="xForwardedForHeader" ng-model="xForwardedForHeader" class="form-control ng-pristine ng-untouched ng-valid ng-empty">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="destinationShortNumber">Short number</label>
+                    <div class="input-group">
+                        <input type="text" size="20" id="destinationShortNumber" ng-model="destinationShortNumber" class="form-control ng-pristine ng-untouched ng-valid ng-not-empty">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="smsText">SMS text</label>
+                    <div class="input-group">
+                        <input type="text" size="20" id="smsText" placeholder="SMS Text" ng-model="smsText" class="form-control ng-pristine ng-untouched ng-valid ng-not-empty">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="session_token">Token</label>
+                    <div class="input-group">
+                        <span ng-click="fetchSessionToken()" class="input-group-addon">Fetch</span>
+                        <input type="text" size="20" id="session_token" placeholder="Session token..." ng-model="session_token" class="form-control ng-pristine ng-untouched ng-valid ng-empty">
+                        <span ng-show="session_result" class="input-group-addon ng-binding ng-hide">Result: </span>
+                    </div>
+                </div>
+        
+
+        <hr>
+
+        <p>After you have a session token, you can trigger sending of the SMS</p>
+        <button ng-disabled="!session_token" class="btn btn-primary" type="submit" ng-click="sendSMS()" disabled="disabled">Send SMS
+        </button>
+        <p>Result: <strong class="ng-binding"></strong></p>
+    </div></form>
+</div>
+
+</div></body></html>
